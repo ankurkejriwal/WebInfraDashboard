@@ -5,6 +5,8 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { HealthCheckComponent } from './modules/health-check/health-check.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { UrlRedirectsComponent } from './modules/url-redirects/url-redirects.component';
+import { CertificateDashboardComponent } from './modules/certificate-dashboard/certificate-dashboard.component';
+import { LanIDDashboardComponent } from './modules/lan-iddashboard/lan-iddashboard.component';
 
 const routes: Routes = [{
   path: '',
@@ -21,6 +23,12 @@ const routes: Routes = [{
   }, {
     path: 'urlredirects',
     component: UrlRedirectsComponent
+  }, {
+    path: 'certificatedashboard',
+    component: CertificateDashboardComponent
+  }, {
+    path: 'laniddashboard',
+    component: LanIDDashboardComponent
   }]
 }];
 
