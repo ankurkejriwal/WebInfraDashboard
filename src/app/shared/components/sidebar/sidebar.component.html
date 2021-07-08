@@ -1,1 +1,30 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2>Web Infra Default</h2>
+            <h2>WebInfra@rbc.com</h2>
+        </div>
+        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Ankur Kejriwal">
+    </div>
+    <mat-divider></mat-divider>
+    <h2 mat-subheader>Pages</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
+    <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a> -->
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Public Web Monitoring</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Url Redirects</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Certificate Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">LanID Dashboard</a>
+    <mat-divider></mat-divider>
+    <h2 mat-subheader>Tools</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+
+  
+  </mat-nav-list>
