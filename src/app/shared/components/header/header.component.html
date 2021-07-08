@@ -1,10 +1,10 @@
-<mat-toolbar color='primary'>
+<mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button>
+        <button mat-icon-button (click)="toggleSideBar()">
             <mat-icon>menu</mat-icon>
         </button>
 
-        <span>APP LOGO</span>
+        <span> APP LOGO </span>
 
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
@@ -23,11 +23,14 @@
                         <mat-icon>person_outline</mat-icon>
                     </button>
                     <mat-menu #menu="matMenu">
-                        <mat-icon>exit_to_app</mat-icon>
-                        Sign out
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign out
+                        </button>
                     </mat-menu>
+
                 </li>
             </ul>
         </div>
-      </mat-toolbar-row>
-  </mat-toolbar>
+    </mat-toolbar-row>
+</mat-toolbar>
